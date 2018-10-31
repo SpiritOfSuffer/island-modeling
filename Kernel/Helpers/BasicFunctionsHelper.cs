@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
-
-namespace Core
+namespace Kernel.Helpers
 {
     public class BasicFunctionsHelper
     {
@@ -41,6 +42,5 @@ namespace Core
         /// <param name="x">X-coordinate</param>
         /// <returns>The value of an integrand function</returns>
         public double Integrand(double x) => Math.Sqrt(1 + (Convert.ToInt16(Derivative(x)) ^ 2));
-
     }
 }
